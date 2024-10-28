@@ -7,9 +7,9 @@ M.run_code = function()
   if ft == "python" then
     cmd = "python " .. vim.fn.expand("%")
   elseif ft == "cpp" then
-    cmd = "g++ " .. vim.fn.expand("%") .. " -o output && ./output"
+    cmd = "g++ " .. vim.fn.expand("%") .. " && ./a.out"
   elseif ft == "c" then
-    cmd = "gcc " .. vim.fn.expand("%") .. " -o output && ./output"
+    cmd = "gcc " .. vim.fn.expand("%") .. " && ./a.out"
   elseif ft == "lua" then
     cmd = "lua " .. vim.fn.expand("%")
   else

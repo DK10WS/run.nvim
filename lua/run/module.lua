@@ -17,7 +17,7 @@ M.run_code = function()
     return
   end
 
-  vim.cmd("!" .. cmd)
+  vim.cmd("NvTerm run " .. cmd)
 end
 
 return M

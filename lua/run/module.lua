@@ -17,7 +17,8 @@ M.run_code = function()
     return
   end
 
-  vim.cmd("!" .. cmd)
+  vim.cmd("FloatermToggle")
+  vim.cmd("FloatermSend " .. cmd)
 end
 
 return M
